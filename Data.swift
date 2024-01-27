@@ -7,7 +7,6 @@
 
 import Foundation
 import SwiftUI
-import CoreLocation
 
 struct Data: Hashable, Codable, Identifiable {
     var id: Int
@@ -15,24 +14,24 @@ struct Data: Hashable, Codable, Identifiable {
     var email: String
     var phone: Int
     var affiliation: String
-    var description
+    var description: String
     
-    private var imageName: String
-    var image: Image {
-        Image(imageName)
-    }
+//    private var imageName: String
+//    var image: Image {
+//        Image(imageName)
+//    }
     
-    private var coordinates: Coordinates
-    var locationCoordinate: CLLocationCoordinate2D {
-            CLLocationCoordinate2D(
-                latitude: coordinates.latitude,
-                longitude: coordinates.longitude)
-        }
-
-
-    struct Coordinates: Hashable, Codable {
-        var latitude: Double
-        var longitude: Double
-    }
+//    private var coordinates: Coordinates
+//    var locationCoordinate: CLLocationCoordinate2D {
+//            CLLocationCoordinate2D(
+//                latitude: coordinates.latitude,
+//                longitude: coordinates.longitude)
+//        }
+//
+//
+//    struct Coordinates: Hashable, Codable {
+//        var latitude: Double
+//        var longitude: Double
+//    }
     
 }

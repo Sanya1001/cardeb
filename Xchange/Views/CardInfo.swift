@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct CardInfo: View {
+    var card: CardData
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading) {
+            Text(card.name)
+            Text(card.affiliation)
+        }
     }
 }
 
 #Preview {
-    CardInfo()
+    CardInfo(card: cards[0])
 }

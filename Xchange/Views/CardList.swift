@@ -9,19 +9,30 @@ import SwiftUI
 
 struct CardList: View {
     var body: some View {
-        NavigationSplitView
-        {
-            List(cards) { card in
-                NavigationLink {
+        GeometryReader{
+            proxy in
+            NavigationSplitView
+            {
+                ScrollView{
+                    ForEach(cards) { card in
+                        NavigationLink {
+                                CardDetail(card: card)
+                                    
+                        } label: {
+                                Card(card: card)
+    //                        .frame(minHeight: proxy.size.width/2)
                             
-                } label: {
-                    Card(card: card)
+                        }
+                        .frame(minHeight: proxy.size.height/5)
+                    }
+                    .frame(minWidth: proxy.size.width)
                 }
+                .navigationTitle("Business Cards")
+            } detail: {
+                Text("Select a Card")
             }
-            .navigationTitle("Business Cards")
-        } detail: {
-            Text("Select a Card")
         }
+        
     }
 }
 

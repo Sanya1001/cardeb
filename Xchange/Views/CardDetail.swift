@@ -8,11 +8,38 @@
 import SwiftUI
 
 struct CardDetail: View {
+    var card: CardData
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView{
+            
+        }
+        Card(card: card)
+//        CircleImage(image: card.image)
+//                    .offset(y: -130)
+//                    .padding(.bottom, -130)
+        VStack(alignment: .leading){
+            Text(card.name)
+                .font(.title)
+            HStack{
+                Text(card.affiliation)
+                    .font(.subheadline)
+                Spacer()
+                Text(card.phone)
+                    .font(.subheadline)
+            }
+            Text(card.email)
+            
+            Divider()
+            Text(card.description)
+            
+        }
+        .padding()
+        .navigationTitle(card.name)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 #Preview {
-    CardDetail()
+    CardDetail(card: cards[0])
 }

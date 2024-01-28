@@ -8,16 +8,19 @@
 import SwiftUI
 
 struct CardInfo: View {
-    var card: CardData
+//    var card: CardData
+    var name: String = ""
+    var email: String = ""
+    var phone: String = ""
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(card.name)
-            Text(card.affiliation)
+            Text(name)
+            Text(email)
         }
     }
 }
 
-#Preview {
-    CardInfo(card: cards[0])
-}
+//#Preview {
+//    CardInfo(card: cards[0])
+//}

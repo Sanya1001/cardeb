@@ -9,10 +9,10 @@ import Foundation
 import SwiftUI
 
 struct CardData: Hashable, Codable, Identifiable {
-    var id: String
+    var id: String = ""
     var name: String
     var email: String
     var phone: String
-    var affiliation: String
-    var description: String
+    var affiliation: String = ""
+    var description: String = ""
 }

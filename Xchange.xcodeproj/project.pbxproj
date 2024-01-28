@@ -30,6 +30,10 @@
 		6BC7ABC62B65BD8D008F4A48 /* PayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7ABC52B65BD8D008F4A48 /* PayView.swift */; };
 		6BC7ABC82B65D4AD008F4A48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7ABC72B65D4AD008F4A48 /* AppDelegate.swift */; };
 		6BC7ABCA2B65D91A008F4A48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7ABC92B65D91A008F4A48 /* SceneDelegate.swift */; };
+		6BCDEE362B6622B500178724 /* ListCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCDEE352B6622B500178724 /* ListCards.swift */; };
+		6BCDEE382B66232500178724 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCDEE372B66232500178724 /* ContactsView.swift */; };
+		6BCDEE3A2B66235600178724 /* AddCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCDEE392B66235600178724 /* AddCardView.swift */; };
+		6BCDEE3E2B6624DB00178724 /* ViewCardsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCDEE3D2B6624DB00178724 /* ViewCardsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +82,10 @@
 		6BC7ABC52B65BD8D008F4A48 /* PayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayView.swift; sourceTree = "<group>"; };
 		6BC7ABC72B65D4AD008F4A48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BC7ABC92B65D91A008F4A48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6BCDEE352B6622B500178724 /* ListCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCards.swift; sourceTree = "<group>"; };
+		6BCDEE372B66232500178724 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		6BCDEE392B66235600178724 /* AddCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardView.swift; sourceTree = "<group>"; };
+		6BCDEE3D2B6624DB00178724 /* ViewCardsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCardsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +124,9 @@
 				6BC7ABC12B65B489008F4A48 /* SignInView.swift */,
 				6BC7ABC32B65B620008F4A48 /* HomeView.swift */,
 				6BC7ABC52B65BD8D008F4A48 /* PayView.swift */,
+				6BCDEE352B6622B500178724 /* ListCards.swift */,
+				6BCDEE372B66232500178724 /* ContactsView.swift */,
+				6BCDEE392B66235600178724 /* AddCardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -199,6 +210,7 @@
 				6BC7ABBF2B65B368008F4A48 /* UserViewModel.swift */,
 				6BC7ABC72B65D4AD008F4A48 /* AppDelegate.swift */,
 				6BC7ABC92B65D91A008F4A48 /* SceneDelegate.swift */,
+				6BCDEE3D2B6624DB00178724 /* ViewCardsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -348,7 +360,11 @@
 				6B2164712B64A256005AD9EE /* ModelData.swift in Sources */,
 				6B2164752B64A2F5005AD9EE /* CardData.swift in Sources */,
 				6B4E856A2B5C9AE600051201 /* XchangeApp.swift in Sources */,
+				6BCDEE3A2B66235600178724 /* AddCardView.swift in Sources */,
+				6BCDEE3E2B6624DB00178724 /* ViewCardsModel.swift in Sources */,
 				6B21647D2B64AB4A005AD9EE /* CardInfo.swift in Sources */,
+				6BCDEE382B66232500178724 /* ContactsView.swift in Sources */,
+				6BCDEE362B6622B500178724 /* ListCards.swift in Sources */,
 				6BC7ABBE2B65B328008F4A48 /* UserModel.swift in Sources */,
 				6BC7ABC22B65B489008F4A48 /* SignInView.swift in Sources */,
 			);

@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct Card: View {
-    var card: CardData
+//    var card: CardData
+    var name: String = ""
+    var email: String = ""
+    var phone: String = ""
     
     var body: some View {
         GeometryReader{
@@ -27,7 +30,7 @@ struct Card: View {
                         .shadow(radius: 7)
                         .padding()
                         .overlay(
-                            CardInfo(card: card)
+                            CardInfo(name: name, email: email, phone: phone)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding()
                             .padding()
@@ -41,9 +44,9 @@ struct Card: View {
 
 }
 
-#Preview {
-    Group{
-        Card(card: cards[0])
-        Card(card: cards[1])
-    }
-}
+//#Preview {
+//    Group{
+//        Card(card: cards[0])
+////        Card(card: cards[1])
+//    }
+//}

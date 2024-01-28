@@ -5,14 +5,24 @@
 //  Created by Sania Sinha on 1/27/24.
 //
 
+import Foundation
 import SwiftUI
 
 struct HomeView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    @StateObject var viewModel = UserViewModel()
 
-#Preview {
-    HomeView()
+    var body: some View{
+        TabView{
+            ContactsView(userId: GlobalData.shared.userId)
+                .tabItem{
+                Label("Contacts", systemImage: "person.fill.badge.plus")
+            }
+            AddCardView()
+                .tabItem{
+                Label("Add Card", systemImage: "doc.fill.badge.plus")
+            }
+
+            ListCards(userId: GlobalData.shared.userId).tabItem { Label("List Cards", systemImage: "square.and.at.rectangle.fill") }
+        }
+    }
 }

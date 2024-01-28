@@ -15,7 +15,7 @@ struct Card: View {
             proxy in
             HStack{
                 Spacer()
-                    Image("bg1")
+                    Image("bg3")
                         .padding(100)
                         .frame(width: (3*proxy.size.width)/4, height: (proxy.size.width)/2)
 //                        .frame(width: 300, height: 200)

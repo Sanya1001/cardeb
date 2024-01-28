@@ -20,7 +20,7 @@ struct CardList: View {
                                     
                         } label: {
                                 Card(card: card)
-                                .foregroundColor(Color(red: 204 / 255, green: 204 / 255, blue: 255 / 255))
+                                .foregroundColor(Color(red: 55 / 255, green: 5 / 255, blue: 181 / 255))
     //                        .frame(minHeight: proxy.size.width/2)
                             
                         }

@@ -13,6 +13,7 @@ struct ContentView: View {
     @StateObject var viewModel = UserViewModel()
     @State private var signedIn = false
     @State private var isSharePresented: Bool = false
+    @State private var isPayPresented: Bool = false
     
     let paymentHandler = PaymentHandler()
     
@@ -59,7 +60,7 @@ struct ContentView: View {
             })
         
         Button(action: {
-            self.isSharePresented = true
+            self.isPayPresented = true
         }, label: {
             Text("REQUEST PAY WITH  APPLE")
                 .font(Font.custom("HelveticaNeue-Bold", size: 16))
@@ -67,10 +68,10 @@ struct ContentView: View {
                 .foregroundColor(.white)
         }
         )
-        .sheet(isPresented: $isSharePresented, onDismiss: {
+        .sheet(isPresented: $isPayPresented, onDismiss: {
             print("Dismiss")
         }, content: {
-            ActivityViewController(activityItems: [URL(string: "cardeb://Working?index=10")!])
+            ActivityViewController(activityItems: [URL(string: "cardeb://Working?index=0")!])
         })
             
             

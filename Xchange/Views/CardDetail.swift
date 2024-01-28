@@ -15,6 +15,7 @@ struct CardDetail: View {
             
         }
         Card(card: card)
+        .foregroundColor(Color(red: 55 / 255, green: 5 / 255, blue: 181 / 255))
 //        CircleImage(image: card.image)
 //                    .offset(y: -130)
 //                    .padding(.bottom, -130)
@@ -28,7 +29,9 @@ struct CardDetail: View {
                 Text(card.phone)
                     .font(.subheadline)
             }
+            .foregroundColor(Color(red: 232 / 255, green: 188 / 255, blue: 232 / 255))
             Text(card.email)
+                .foregroundColor(Color(red: 232 / 255, green: 188 / 255, blue: 232 / 255))
             
             Divider()
             Text(card.description)
@@ -37,6 +40,18 @@ struct CardDetail: View {
         .padding()
         .navigationTitle(card.name)
         .navigationBarTitleDisplayMode(.inline)
+    }
+    
+    func openView(){
+        NavigationLink {
+                CardDetail(card: card)
+                    
+        } label: {
+                Card(card: card)
+                .foregroundColor(Color(red: 55 / 255, green: 5 / 255, blue: 181 / 255))
+//                        .frame(minHeight: proxy.size.width/2)
+            
+        }
     }
 }
 

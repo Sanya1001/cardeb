@@ -27,6 +27,9 @@
 		6BC7ABC02B65B368008F4A48 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7ABBF2B65B368008F4A48 /* UserViewModel.swift */; };
 		6BC7ABC22B65B489008F4A48 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7ABC12B65B489008F4A48 /* SignInView.swift */; };
 		6BC7ABC42B65B620008F4A48 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7ABC32B65B620008F4A48 /* HomeView.swift */; };
+		6BC7ABC62B65BD8D008F4A48 /* PayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7ABC52B65BD8D008F4A48 /* PayView.swift */; };
+		6BC7ABC82B65D4AD008F4A48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7ABC72B65D4AD008F4A48 /* AppDelegate.swift */; };
+		6BC7ABCA2B65D91A008F4A48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7ABC92B65D91A008F4A48 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +75,9 @@
 		6BC7ABBF2B65B368008F4A48 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		6BC7ABC12B65B489008F4A48 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		6BC7ABC32B65B620008F4A48 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		6BC7ABC52B65BD8D008F4A48 /* PayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayView.swift; sourceTree = "<group>"; };
+		6BC7ABC72B65D4AD008F4A48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6BC7ABC92B65D91A008F4A48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,7 @@
 				6B21647E2B64AEF7005AD9EE /* CardDetail.swift */,
 				6BC7ABC12B65B489008F4A48 /* SignInView.swift */,
 				6BC7ABC32B65B620008F4A48 /* HomeView.swift */,
+				6BC7ABC52B65BD8D008F4A48 /* PayView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -190,6 +197,8 @@
 				6B2164822B657B85005AD9EE /* PaymentHandler.swift */,
 				6BC7ABBD2B65B328008F4A48 /* UserModel.swift */,
 				6BC7ABBF2B65B368008F4A48 /* UserViewModel.swift */,
+				6BC7ABC72B65D4AD008F4A48 /* AppDelegate.swift */,
+				6BC7ABC92B65D91A008F4A48 /* SceneDelegate.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -328,10 +337,13 @@
 				6B21647F2B64AEF7005AD9EE /* CardDetail.swift in Sources */,
 				6BC7ABC42B65B620008F4A48 /* HomeView.swift in Sources */,
 				6BC7ABC02B65B368008F4A48 /* UserViewModel.swift in Sources */,
+				6BC7ABC62B65BD8D008F4A48 /* PayView.swift in Sources */,
 				6B2164832B657B85005AD9EE /* PaymentHandler.swift in Sources */,
 				6B4E856C2B5C9AE600051201 /* ContentView.swift in Sources */,
 				6B2164782B64A52E005AD9EE /* CardList.swift in Sources */,
+				6BC7ABCA2B65D91A008F4A48 /* SceneDelegate.swift in Sources */,
 				6B29C9FA2B5CE3E70084BBA4 /* Card.swift in Sources */,
+				6BC7ABC82B65D4AD008F4A48 /* AppDelegate.swift in Sources */,
 				6B2164812B64C844005AD9EE /* ActivityViewController.swift in Sources */,
 				6B2164712B64A256005AD9EE /* ModelData.swift in Sources */,
 				6B2164752B64A2F5005AD9EE /* CardData.swift in Sources */,

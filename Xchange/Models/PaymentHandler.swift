@@ -65,10 +65,12 @@ var paymentStatus = PKPaymentAuthorizationStatus.failure
 var completionHandler: PaymentCompletionHandler?
 
 func startPayment(completion: @escaping PaymentCompletionHandler) {
+    
+    print("start payment")
 
-    let amount = PKPaymentSummaryItem(label: "Amount", amount: NSDecimalNumber(string: "8.88"), type: .final)
-    let tax = PKPaymentSummaryItem(label: "Tax", amount: NSDecimalNumber(string: "1.12"), type: .final)
-    let total = PKPaymentSummaryItem(label: "ToTal", amount: NSDecimalNumber(string: "10.00"), type: .pending)
+    let amount = PKPaymentSummaryItem(label: "Amount", amount: NSDecimalNumber(string: "1.00"), type: .final)
+    let tax = PKPaymentSummaryItem(label: "Tax", amount: NSDecimalNumber(string: "0.01"), type: .final)
+    let total = PKPaymentSummaryItem(label: "ToTal", amount: NSDecimalNumber(string: "1.01"), type: .pending)
 
     paymentSummaryItems = [amount, tax, total];
     completionHandler = completion

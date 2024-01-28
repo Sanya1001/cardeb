@@ -26,45 +26,69 @@ struct ContentView: View {
                     ZStack (alignment: .top) {
                         Color.black
                         VStack {
-                            Text("CardeB")
-                                .font(.custom(
-                                    "AmericanTypewriter",
-                                    fixedSize: 34)
+                            HStack(spacing: 0){
+                                Text("Carde")
+                                    .font(.custom(
+                                        "SanFrancisco",
+                                        fixedSize: 45)
+                                        .weight(.bold))
+                                    .foregroundColor(Color(red: 101 / 255, green: 115 / 255, blue: 255 / 255))
+                                Text("B")
+                                    .font(.custom(
+                                    "SanFrancisco",
+                                    fixedSize: 45)
                                     .weight(.bold))
-                                .foregroundColor(.pink)
+                                .foregroundColor(Color(red: 247 / 255, green: 174 / 255, blue: 242 / 255))
+                            }
+                            
                             CardList()
                         }
                         .padding()
                         Spacer()
-                            .frame(minHeight: proxy.size.height)
+                        .frame(minHeight: proxy.size.height)
                     }
                 }
             }
-            Button("Share app") {
+            Button("Share your Card") {
                 self.isSharePresented = true
             }
             .sheet(isPresented: $isSharePresented, onDismiss: {
                 print("Dismiss")
             }, content: {
-                ActivityViewController(activityItems: [URL(string: "cardeb://com.hatchlings.exchangeui")!])
+                ActivityViewController(activityItems: [URL(string: "cardeb://Working?index=10")!])
             })
+        
+        Button(action: {
+            self.isSharePresented = true
+        }, label: {
+            Text("REQUEST PAY WITH  APPLE")
+                .font(Font.custom("HelveticaNeue-Bold", size: 16))
+                .padding(10)
+                .foregroundColor(.white)
+        }
+        )
+        .sheet(isPresented: $isSharePresented, onDismiss: {
+            print("Dismiss")
+        }, content: {
+            ActivityViewController(activityItems: [URL(string: "cardeb://Working?index=10")!])
+        })
             
             
-            Button(action: {
-                self.paymentHandler.startPayment { (success) in
-                    if success {
-                        print("Success")
-                    } else {
-                        print("Failed")
-                    }
-                }
-            }, label: {
-                Text("PAY WITH  APPLE")
-                    .font(Font.custom("HelveticaNeue-Bold", size: 16))
-                    .padding(10)
-                    .foregroundColor(.white)
-            }
-            )
+//            Button(action: {
+//                self.paymentHandler.startPayment { (success) in
+//                    if success {
+//                        print("Success")
+//                    } else {
+//                        print("Failed")
+//                    }
+//                }
+//            }, label: {
+//                Text("PAY WITH  APPLE")
+//                    .font(Font.custom("HelveticaNeue-Bold", size: 16))
+//                    .padding(10)
+//                    .foregroundColor(.white)
+//            }
+//            )
 //        }
 //        else
 //        {
@@ -73,10 +97,14 @@ struct ContentView: View {
             
         }
     
-        func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-            print(url)
-            return true
-        }
+//    @ViewBuilder func getView(view: String) -> {
+//        switch view {
+//        case "10":
+//            Text(view)
+//        default:
+//            EmptyView()
+//        }
+//    }
 }
 
 #Preview {
